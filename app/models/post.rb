@@ -1,3 +1,4 @@
 class Post < ApplicationRecord
-	has_one :tag
+	belongs_to :tag
+	belongs_to :user
 end
