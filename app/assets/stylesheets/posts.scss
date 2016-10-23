@@ -1,3 +1,60 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+input[text_area] {
+  display: block;
+}
+
+
+// & > * {
+//   margin: 14px auto;
+//   text-align: center;
+// }
+
+form {
+  width: 620px;
+  margin: 0 auto;
+}
+
+form div {
+  display: inline-block;
+  padding: 3px 8px;
+  margin-bottom: 10px;
+  width: 600px;
+
+  &:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+
+  .block-label {
+    display: block;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    border: none;
+  }
+
+  ul {
+    list-style-type: none;
+    display: inline;
+  }
+
+  li {
+    display: inline;
+  }
+
+  span {
+    width: 50px;
+  }
+
+  &[type=submit] {
+    width: 5.5em;
+    margin-top: 30px;
+    height: 4em;
+    border-radius: 10%;
+    background-color: red;
+  }
+}

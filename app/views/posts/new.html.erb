@@ -1,28 +1,35 @@
 <%= form_for @post do |f| %>
 
-	<div class="form-group">
-		<%= f.label "Light the fire..." %>
-		<%= f.text_area :content, rows: 8 %>
+	<div class="new-story">
+		<%#= f.label "Light the fire...", class: 'block-label' %>
+		<%= f.text_area :content, rows: 8, placeholder: 'Light the fire...' %>
 	</div>
 
-  <div class="form-group">
-    <%= f.label "Add categories..." %>
-    <%= f.radio_button(:tag_id, 1) %>
-    <%= f.label(:tag_id, "Moments of power") %>
-    <%= f.radio_button(:tag_id, 2) %>
-    <%= f.label(:tag_id, "Growth through struggle") %>
-    <%= f.radio_button(:tag_id, 3) %>
-    <%= f.label(:tag_id, "Cold hard facts") %>
-    <%= f.radio_button(:tag_id, 4) %>
-    <%= f.label(:tag_id, "Kudos") %>
-  </div>
+  <div class="new-story radio">
+    <%= f.label "Add categories...", class: 'block-label' %>
+    <ul>
+      <li><span>
+        <%= f.radio_button(:tag_id, 1) %>
+        <%= f.label(:tag_id, "Moments of power") %>
+      </span></li>
+      <li><span>
+        <%= f.radio_button(:tag_id, 2) %>
+        <%= f.label(:tag_id, "Growth through struggle") %>
+      </span></li>
+      <li><span>
+        <%= f.radio_button(:tag_id, 3) %>
+        <%= f.label(:tag_id, "Cold hard facts") %>
+      </span></li>
+      <li><span>
+        <%= f.radio_button(:tag_id, 4) %>
+        <%= f.label(:tag_id, "Kudos") %>
+      </span></li>
+    </ul>
 
   <%= f.hidden_field :user_id, value: 1 %>
 
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#thankYou">
-  <div class="form-group">
-    <%= f.submit "Save", class: 'btn-go' %>
-  </div>
+  <button type="button" class="btn btn-info btn-lg btn-go" data-toggle="modal" data-target="#thankYou">
+    <%= f.submit "Save" %>
   </button>
-  
+
 <% end %>
