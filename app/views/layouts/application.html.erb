@@ -20,13 +20,14 @@
 
         <%= link_to image_tag('accomplish.png', id: "title"), controller: 'home'%>
         <img id = "profile-image" src="/assets/happy-girl.png" alt="Ellie Profile" />
+
       <div id ="view-link"> <%= link_to "View Your Moments", posts_path %></div>
     </div>
     <%= yield %>
   </body>
 
 <!--  sally's button-->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#thankYou">🎵</button>
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#thankYou">🎵</button> -->
 
 <!--  sally's modal-->
 <div class="modal fade" id="thankYou" role="dialog">
@@ -34,43 +35,24 @@
 
       <!-- Modal content-->
       <div class="modal-content">
-        <div class="modal-header">
+        <!-- <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Thank You's</h4>
-        </div>
+          <h4 class="modal-title"></h4>
+        </div> -->
         <div class="modal-body">
-          <div class="homies-container">
-          <img id="homies" src="http://i.imgur.com/cwihrOJ.gif">
+          <!-- <div class="homies-container"> -->
+          <div>
+            <img src="http://ww2.kqed.org/bayareabites/wp-content/uploads/sites/24/2012/11/michelle-obama-john-gurziniski-afp-getty-images560.jpg">
+            <p>Always stay true to yourself and never let what somebody else says distract you from your goals. 
+          — Michelle Obama</p>
           </div>
-
-          <p>
-            <ul>
-              <li>DBC Teachers and Mentors</li>
-              <li>All you bobolinks, coyotes, and wolves</li>
-            </ul>
-
-          Thank you all so much for your patience, resourcefulness, and encouragement!
-          </p>
-
-          <p>Special Thanks to:
-            <ul>
-              <li>
-                Alex Carroll, for naming my app
-              </li>
-              <li>
-                Todd Seller, for being a front-end genius and Literally CSS-Gandalf
-              </li>
-              <li>
-                Google, for being Google
-              </li>
-            </ul>
 
           <!-- <span class="secret">and senpai ♥</span> -->
           </p>
         </div>
         <div class="modal-footer">
 
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
         </div>
       </div>
 
