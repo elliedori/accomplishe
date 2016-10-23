@@ -11,8 +11,10 @@
   <body>
 
     <div class="navigation-container">
-        <img id = "profile-image" src="/assets/Ellie.png" alt="Ellie Profile" />
-      <%= link_to "View Your Moments", posts_path %>
+
+        <img id="title" src="/assets/accomplishe.png"/>
+        <img id = "profile-image" src="/assets/ellie.png" alt="Ellie Profile" />
+      <div id ="view-link"> <%= link_to "View Your Moments", posts_path %></div>
     </div>
     <%= yield %>
   </body>
