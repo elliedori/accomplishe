@@ -1,9 +1,10 @@
 <h1>This is the posts index</h1>
 
+<ul>
 <% @posts.each do |post| %>
 <div class="story_body_container">
-  <p> <%= post.content%> </p>
-  <p> <%= post.tag.name %> </p>
+	<li><%= post.content %></li>
+	<li><%= post.tag.name %></li>
 </div>
-
 <% end %>
+</ul>
