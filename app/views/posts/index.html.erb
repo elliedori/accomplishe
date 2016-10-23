@@ -3,8 +3,8 @@
 <ul>
 <% @posts.each do |post| %>
 <div class="story_body_container">
-	<li><%= post.content %></li>
-	<li><%= post.tag.name %></li>
+	<p><%= post.content %></p>
+	<p><%= post.tag.name %></p>
 </div>
 <% end %>
 </ul>
