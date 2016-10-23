@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order(created_at: :desc)
   end
 
   def show
@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 		@post = Post.create!(post_params)
 		if @post.save
 			tag = Tag.find(@post.tag_id)
-
+			sleep (4)
 			redirect_to "/moments/#{tag.name}"
 		end
 	end
