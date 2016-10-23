@@ -2,11 +2,6 @@ class PostsController < ApplicationController
 
 	def index
 		@posts = Post.all
-		@power_posts = @posts.where(tag_id: 1)
-		@growth_posts = @posts.where(tag_id: 2)
-		@facts_posts = @posts.where(tag_id: 3)
-		@endorsements_posts = @posts.where(tag_id: 4)
-	
 	end
 
 	def power
