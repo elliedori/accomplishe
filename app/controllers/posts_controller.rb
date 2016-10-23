@@ -27,5 +27,5 @@ class PostsController < ApplicationController
 	def destroy
 
 	end
->>>>>>> backend
+
 end
