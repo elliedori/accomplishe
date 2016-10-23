@@ -97,3 +97,13 @@
 #facts {
   background-image: url(/assets/facts.jpeg);
 }
+
+.tag {
+  display: inline-block;
+  padding-left: 10px;
+  height: 30px;
+}
+.tag-name {
+  vertical-align: 10px;
+  display: inline-block;
+}

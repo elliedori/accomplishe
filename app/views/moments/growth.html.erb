@@ -1,7 +1,9 @@
 <h1>Growth</h1>
 
-<ul>
 <% @growth_posts.each do |post| %>
-	<li><%= post.content %></li>
+<div class="story_body_container">
+	<p><%= post.content %></p>
+  <img class="tag" src="/assets/tag.png" alt="tag" />
+	<p class= "tag-name"><%= post.tag.name.capitalize %></p>
+</div>
 <% end %>
-</ul>
