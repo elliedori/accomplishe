@@ -31,15 +31,24 @@ form div {
     display: block;
   }
 
+  #choose {
+    color: #7E0413;
+    size: 2em;
+  }
+
   textarea {
     display: block;
     width: 100%;
-    border: none;
+    border-color: #d3d3d3
   }
 
   ul {
     list-style-type: none;
     display: inline;
+  }
+
+  #placeholder-text {
+    font-size: 1.4em;
   }
 
   li {
