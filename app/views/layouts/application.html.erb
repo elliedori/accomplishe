@@ -11,8 +11,7 @@
   <body>
 
     <div class="navigation-container">
-
-        <img id="title" src="/assets/accomplishe.png"/>
+        <%= link_to image_tag('accomplishe.png', id: "title"), controller: 'home'%>
         <img id = "profile-image" src="/assets/ellie.png" alt="Ellie Profile" />
       <div id ="view-link"> <%= link_to "View Your Moments", posts_path %></div>
     </div>
