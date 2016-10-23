@@ -47,6 +47,7 @@
  }
 
  #profile-image {
+
    margin: 1.4%;
    max-height: 72%;
    float: right;
@@ -63,4 +64,36 @@
 
 .story_body_container p {
   padding: 20px;
+}
+
+.category {
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position: 50% 50%;
+  background-color: transparent;
+  height: 300px;
+  width: 300px;
+  border: none;
+}
+
+.category a {
+  color: white;
+  text-decoration: none;
+  font-size: 4em;
+}
+
+#power {
+  background-image: url(/assets/power.jpeg);
+}
+
+#growth {
+  background-image: url(/assets/growth.jpeg);
+}
+
+#kudos {
+  background-image: url(/assets/kudos.jpeg);
+}
+
+#facts {
+  background-image: url(/assets/facts.jpeg);
 }
