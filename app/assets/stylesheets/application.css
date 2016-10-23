@@ -14,8 +14,10 @@
  *= require_self
  */
 
+
+
  .navigation-container {
- 	width: 100%;
+ 	width: flex;
  	margin: 0 auto;
  	padding: 0;
  	background-color: white;
@@ -27,3 +29,21 @@
  	border-left: 0px;
  	border-color: #d3d3d3;
  }
+
+ #profile-image {
+   max-height: 100%;
+   float: right;
+ }
+
+ .story_body_container{
+    min-width: 400px;
+   	max-width: 600px;
+   	height: flex;
+   	margin: 0 auto;
+   	margin-bottom: 8%;
+	  background-color: #f1f1f1;
+}
+
+.story_body_container p {
+  padding: 20px;
+}
