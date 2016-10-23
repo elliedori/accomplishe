@@ -63,7 +63,7 @@ a {
    	max-width: 600px;
    	height: flex;
    	margin: 0 auto;
-   	margin-bottom: 8%;
+   	margin-bottom: 2%;
 	  background-color: #f1f1f1;
 }
 
@@ -116,6 +116,7 @@ a {
 .tag-name {
   vertical-align: 10px;
   display: inline-block;
+  left-margin: -10%;
 }
 
 #buttons1 {
@@ -135,3 +136,9 @@ a {
   margin-left: 240px;
   margin-right: 240px;
 }
+
+/*.post-content {
+  line-height: 2em;
+
+
+}*/
