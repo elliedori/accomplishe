@@ -28,12 +28,11 @@ a {
   float: center;
   margin-left: 36%;
   margin-top: 2%;
-  /*position: fixed;*/
 }
 
 #view-link {
   float: right;
-   margin-top: 3.4%;
+  margin-top: 3.4%;
   /*display: inline-block;*/
 }
 
@@ -41,6 +40,7 @@ a {
  	width: flex;
  	margin: 0 auto;
  	padding: 0;
+  margin-bottom: 2%
  	background-color: white;
  	height: 100px;
  	border-bottom: 0.8px;
@@ -65,6 +65,7 @@ a {
    	margin: 0 auto;
    	margin-bottom: 2%;
 	  background-color: #f1f1f1;
+    border-radius: px;
 }
 
 .story_body_container p {
@@ -116,7 +117,8 @@ a {
 .tag-name {
   vertical-align: 10px;
   display: inline-block;
-  left-margin: -10%;
+  margin-top: -20px;
+  color: #7E0413;
 }
 
 #buttons1 {
@@ -137,8 +139,7 @@ a {
   margin-right: 240px;
 }
 
-/*.post-content {
-  line-height: 2em;
-
-
-}*/
+.post-content {
+  line-height: 1.7em;
+  font-size: 1.1em;
+}
