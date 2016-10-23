@@ -3,15 +3,13 @@ Rails.application.routes.draw do
   # root 'posts#index'
   root 'home#index'
 
-  resources :users do
-	  resources :posts
-  end
-
+  resources :users
+  resources :posts
   resources :tags
 
-  get 'posts/power', to: 'posts#power'
-  get 'posts/growth', to: 'posts#growth'
-  get 'posts/facts', to: 'posts#facts'
-  get 'posts/kudos', to: 'posts#kudos'
+  get 'moments/power', to: 'moments#power'
+  get 'moments/growth', to: 'moments#growth'
+  get 'moments/facts', to: 'moments#facts'
+  get 'moments/kudos', to: 'moments#kudos'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
