@@ -3,9 +3,15 @@
   <head>
     <title>Accomplishe</title>
     <%= csrf_meta_tags %>
-
+    <!--  BootStrap Helper-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Plugin JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'bootstrap_modal.css', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
@@ -17,4 +23,56 @@
     </div>
     <%= yield %>
   </body>
+
+<!--  sally's button-->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#thankYou">🎵</button>
+
+<!--  sally's modal-->
+<div class="modal fade" id="thankYou" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Thank You's</h4>
+        </div>
+        <div class="modal-body">
+          <div class="homies-container">
+          <img id="homies" src="http://i.imgur.com/cwihrOJ.gif">
+          </div>
+
+          <p>
+            <ul>
+              <li>DBC Teachers and Mentors</li>
+              <li>All you bobolinks, coyotes, and wolves</li>
+            </ul>
+
+          Thank you all so much for your patience, resourcefulness, and encouragement!
+          </p>
+
+          <p>Special Thanks to:
+            <ul>
+              <li>
+                Alex Carroll, for naming my app
+              </li>
+              <li>
+                Todd Seller, for being a front-end genius and Literally CSS-Gandalf
+              </li>
+              <li>
+                Google, for being Google
+              </li>
+            </ul>
+
+          <!-- <span class="secret">and senpai ♥</span> -->
+          </p>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </html>
