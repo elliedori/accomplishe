@@ -14,6 +14,16 @@
  *= require_self
  */
 
+.category {
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position: 50% 50%;
+  background-color: transparent;
+  height: 300px;
+  width: 300px;
+  border: none;
+  background-image: url(/assets/power.jpeg);
+}
 
 
  .navigation-container {
@@ -31,7 +41,8 @@
  }
 
  #profile-image {
-   max-height: 100%;
+   margin: 0.5%;
+   max-height: 80%;
    float: right;
  }
 
