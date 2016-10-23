@@ -14,7 +14,23 @@
  *= require_self
  */
 
+ * {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+ }
 
+#title {
+  width: 30%;
+  height: 30%;
+  float: center;
+  margin-left: 36%;
+  margin-top: 3.6%;
+}
+
+#view-link {
+  float: right;
+   margin-top: 3.8%;
+  /*display: inline-block;*/
+}
 
  .navigation-container {
  	width: flex;
@@ -31,7 +47,8 @@
  }
 
  #profile-image {
-   max-height: 100%;
+   margin: 1.4%;
+   max-height: 72%;
    float: right;
  }
 
