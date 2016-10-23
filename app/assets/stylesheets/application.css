@@ -26,14 +26,8 @@ a {
   width: 30%;
   height: 40%;
   float: center;
-  margin-left: 36%;
-  margin-top: 2%;
-}
-
-#view-link {
-  float: right;
-  margin-top: 3.4%;
-  /*display: inline-block;*/
+  margin-left: 22%;
+  margin-top: 1%;
 }
 
  .navigation-container {
@@ -52,8 +46,8 @@ a {
  }
 
  #profile-image {
-
    margin: 1.4%;
+   margin-top: 0;
    max-height: 72%;
    float: right;
  }
@@ -154,4 +148,17 @@ a {
 .btn-go {
   padding-top: 20px;
   margin-top: -200px;
+}
+
+
+#first-link {
+  float: left;
+  margin-top: 26px;
+  margin-left: 20px;
+  /*display: inline-block;*/
+}
+
+#second-link {
+  margin-top: 0;
+  margin-left: -105px;
 }
