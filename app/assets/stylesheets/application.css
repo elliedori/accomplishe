@@ -148,4 +148,10 @@ a {
 .background-image {
   background-size: 100%;
   background-repeat: no-repeat;
-  background-attachment: fixed;}
+  background-attachment: fixed;
+}
+
+.btn-go {
+  padding-top: 20px;
+  margin-top: -200px;
+}
