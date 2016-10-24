@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accomplishe</title>
+    <%= csrf_meta_tags %>
+    <!--  BootStrap Helper-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Plugin JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'bootstrap_modal.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+  <body>
+
+    <div class="navigation-container">
+    <span id ="first-link"><%= link_to "Log a Moment", new_post_path, class: 'btn-go' %></span><br/>
+     <span id="second-link"><%= link_to "View Your Moments", posts_path %></span>
+     
+        <%= link_to image_tag('accomplish.png', id: "title"), controller: 'home'%>
+        <img id = "profile-image" src="/assets/happy-girl.png" alt="Ellie Profile" />
+
+    </div>
+    <%= yield %>
+  </body>
+
+<!--  sally's button-->
+<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#thankYou">🎵</button> -->
+
+<!--  sally's modal-->
+<div class="modal fade" id="thankYou" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div> -->
+        <div class="modal-body">
+          <!-- <div class="homies-container"> -->
+          <div>
+            <img src="http://ww2.kqed.org/bayareabites/wp-content/uploads/sites/24/2012/11/michelle-obama-john-gurziniski-afp-getty-images560.jpg">
+            <p>Always stay true to yourself and never let what somebody else says distract you from your goals. 
+          — Michelle Obama</p>
+          </div>
+
+          <!-- <span class="secret">and senpai ♥</span> -->
+          </p>
+        </div>
+        <div class="modal-footer">
+
+          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</html>

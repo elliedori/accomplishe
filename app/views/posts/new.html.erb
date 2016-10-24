@@ -1,0 +1,36 @@
+<%= form_for @post do |f| %>
+
+	<div class="new-story">
+		<%#= f.label "Light the fire...", class: 'block-label' %>
+		<%= f.text_area :content, rows: 8, placeholder: 'Share your moment...', id: "placeholder-text"%>
+	</div>
+
+  <div class="new-story radio">
+    <%= f.label "Choose a category", class: 'block-label', id: 'choose'%>
+    <br/>
+    <ul>
+      <li><span>
+        <%= f.radio_button(:tag_id, 1) %>
+        <%= f.label(:tag_id, "Moment of power") %>
+      </span></li>
+      <li><span>
+        <%= f.radio_button(:tag_id, 2) %>
+        <%= f.label(:tag_id, "Growth through struggle") %>
+      </span></li>
+      <li><span>
+        <%= f.radio_button(:tag_id, 3) %>
+        <%= f.label(:tag_id, "Cold hard facts") %>
+      </span></li>
+      <li><span>
+        <%= f.radio_button(:tag_id, 4) %>
+        <%= f.label(:tag_id, "Kudos") %>
+      </span></li>
+    </ul>
+
+  <%= f.hidden_field :user_id, value: 1 %>
+  <br/> <br/>
+  <button type="button" class="btn btn-info btn-lg btn-go" data-toggle="modal" data-target="#thankYou">
+    <%= f.submit "Save" %>
+  </button>
+
+<% end %>

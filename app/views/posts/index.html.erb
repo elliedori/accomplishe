@@ -1,0 +1,7 @@
+<% @posts.each do |post| %>
+<div class="story_body_container">
+	<p><%= post.content %></p>
+  <img class="tag" src="/assets/tag.png" alt="tag" />
+	<p class= "tag-name"><%= post.tag.name.capitalize %></p>
+</div>
+<% end %>
