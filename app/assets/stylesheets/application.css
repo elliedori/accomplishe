@@ -116,9 +116,7 @@ a {
 }
 
 .post-date {
-  vertical-align: 10px;
-  display: inline-block;
-  margin-top: -20px;
+  margin-top: -10px;
   float: right;
 }
 
