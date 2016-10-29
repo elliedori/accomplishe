@@ -1,4 +1,4 @@
-# SF LADY PROBLEMS HACKATHON 2016
+# WINNER – SF LADY PROBLEMS HACKATHON 2016 (3rd Place)
 Accomplishe is an app that helps women track their moments of success, power, and growth in the workplace so that they have a clear sense of what they bring to the table and feel more confident advocating for themselves. 
 
 ## The Problem
